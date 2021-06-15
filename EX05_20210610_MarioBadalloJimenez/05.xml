@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE mysqldump SYSTEM '05.dtd'>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <database name="BDDepartamentos">
+        <table_structure name="DEPART">
+            <field Comment="" Extra="" Key="PRI" Null="NO" Type="int" Field="TDEPT_NO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="varchar(14)" Field="DNOMBRE"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="varchar(14)" Field="LOC"/>
+            <key Comment="" Null="" Visible="YES" Index_comment="" Index_type="BTREE" Cardinality="4" Collation="A" Column_name="TDEPT_NO" Seq_in_index="1" Key_name="PRIMARY" Non_unique="0" Table="DEPART"/>
+            <options Comment="" Collation="utf8mb4_0900_ai_ci" Create_options="" Update_time="2021-06-07 21:24:16" Create_time="2021-06-07 21:23:17" Data_free="0" Index_length="0" Max_data_length="0" Data_length="16384" Avg_row_length="4096" Rows="4" Row_format="Dynamic" Version="10" Engine="InnoDB" Name="DEPART"/>
+        </table_structure>
+        <table_data name="DEPART">
+            <row>
+                <field name="TDEPT_NO">10</field>
+                <field name="DNOMBRE">CONTABILIDAD</field>
+                <field name="LOC">SEVILLA</field>
+            </row>
+            <row>
+                <field name="TDEPT_NO">20</field>
+                <field name="DNOMBRE">INVESTIGACION</field>
+                <field name="LOC">MADRID</field>
+            </row>
+            <row>
+                <field name="TDEPT_NO">30</field>
+                <field name="DNOMBRE">VENTAS</field>
+                <field name="LOC">BARCELONA</field>
+            </row>
+            <row>
+                <field name="TDEPT_NO">40</field>
+                <field name="DNOMBRE">PRODUCCION</field>
+                <field name="LOC">BILBAO</field>
+            </row>
+        </table_data>
+        <table_structure name="EMPLE">
+            <field Comment="" Extra="" Key="PRI" Null="NO" Type="int" Field="EMP_NO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="varchar(10)" Field="APELLIDO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="varchar(10)" Field="OFICIO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="DIR"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="date" Field="FECHA_ALT"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="SALARIO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="COMISION"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="DEPT_NO"/>
+            <key Comment="" Null="" Visible="YES" Index_comment="" Index_type="BTREE" Cardinality="14" Collation="A" Column_name="EMP_NO" Seq_in_index="1" Key_name="PRIMARY" Non_unique="0" Table="EMPLE"/>
+            <options Comment="" Collation="utf8mb4_0900_ai_ci" Create_options="" Update_time="2021-06-07 21:29:55" Create_time="2021-06-07 21:23:17" Data_free="0" Index_length="0" Max_data_length="0" Data_length="16384" Avg_row_length="1170" Rows="14" Row_format="Dynamic" Version="10" Engine="InnoDB" Name="EMPLE"/>
+        </table_structure>
+        <table_data name="EMPLE">
+            <row>
+                <field name="EMP_NO">7369</field>
+                <field name="APELLIDO">SANCHEZ</field>
+                <field name="OFICIO">EMPLEADO</field>
+                <field name="DIR">7902</field>
+                <field name="FECHA_ALT">2000-12-17</field>
+                <field name="SALARIO">1040</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">20</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7499</field>
+                <field name="APELLIDO">ARROYO</field>
+                <field name="OFICIO">VENDEDOR</field>
+                <field name="DIR">7698</field>
+                <field name="FECHA_ALT">2000-02-20</field>
+                <field name="SALARIO">1500</field>
+                <field name="COMISION">390</field>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7521</field>
+                <field name="APELLIDO">SALA</field>
+                <field name="OFICIO">VENDEDOR</field>
+                <field name="DIR">7698</field>
+                <field name="FECHA_ALT">2001-02-22</field>
+                <field name="SALARIO">1625</field>
+                <field name="COMISION">650</field>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7566</field>
+                <field name="APELLIDO">JIMENEZ</field>
+                <field name="OFICIO">DIRECTOR</field>
+                <field name="DIR">7839</field>
+                <field name="FECHA_ALT">2001-04-02</field>
+                <field name="SALARIO">2900</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">20</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7654</field>
+                <field name="APELLIDO">MARTIN</field>
+                <field name="OFICIO">VENDEDOR</field>
+                <field name="DIR">7698</field>
+                <field name="FECHA_ALT">2001-09-29</field>
+                <field name="SALARIO">1600</field>
+                <field name="COMISION">1020</field>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7698</field>
+                <field name="APELLIDO">NEGRO</field>
+                <field name="OFICIO">DIRECTOR</field>
+                <field name="DIR">7839</field>
+                <field name="FECHA_ALT">2001-05-01</field>
+                <field name="SALARIO">3005</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7782</field>
+                <field name="APELLIDO">CEREZO</field>
+                <field name="OFICIO">DIRECTOR</field>
+                <field name="DIR">7839</field>
+                <field name="FECHA_ALT">2001-06-09</field>
+                <field name="SALARIO">2885</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">10</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7788</field>
+                <field name="APELLIDO">GIL</field>
+                <field name="OFICIO">ANALISTA</field>
+                <field name="DIR">7566</field>
+                <field name="FECHA_ALT">2001-11-09</field>
+                <field name="SALARIO">3000</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">20</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7839</field>
+                <field name="APELLIDO">REY</field>
+                <field name="OFICIO">PRESIDENTE</field>
+                <field name="DIR" xsi:nil="true"/>
+                <field name="FECHA_ALT">2001-11-17</field>
+                <field name="SALARIO">4100</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">10</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7844</field>
+                <field name="APELLIDO">TOVAR</field>
+                <field name="OFICIO">VENDEDOR</field>
+                <field name="DIR">7698</field>
+                <field name="FECHA_ALT">2001-09-08</field>
+                <field name="SALARIO">1350</field>
+                <field name="COMISION">0</field>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7876</field>
+                <field name="APELLIDO">ALONSO</field>
+                <field name="OFICIO">EMPLEADO</field>
+                <field name="DIR">7788</field>
+                <field name="FECHA_ALT">2001-09-23</field>
+                <field name="SALARIO">1430</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">20</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7900</field>
+                <field name="APELLIDO">JIMENO</field>
+                <field name="OFICIO">EMPLEADO</field>
+                <field name="DIR">7698</field>
+                <field name="FECHA_ALT">2001-12-03</field>
+                <field name="SALARIO">1335</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">30</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7902</field>
+                <field name="APELLIDO">FERNANDEZ</field>
+                <field name="OFICIO">ANALISTA</field>
+                <field name="DIR">7566</field>
+                <field name="FECHA_ALT">2001-12-03</field>
+                <field name="SALARIO">3000</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">20</field>
+            </row>
+            <row>
+                <field name="EMP_NO">7934</field>
+                <field name="APELLIDO">MUÑOZ</field>
+                <field name="OFICIO">EMPLEADO</field>
+                <field name="DIR">7782</field>
+                <field name="FECHA_ALT">2002-01-23</field>
+                <field name="SALARIO">1690</field>
+                <field name="COMISION" xsi:nil="true"/>
+                <field name="DEPT_NO">10</field>
+            </row>
+        </table_data>
+        <table_structure name="GRADO">
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="GRADO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="SALARIO_MAS_BAJO"/>
+            <field Comment="" Extra="" Key="" Null="YES" Type="int" Field="SALARIO_MAS_ALTO"/>
+            <options Comment="" Collation="utf8mb4_0900_ai_ci" Create_options="" Update_time="2021-06-07 21:30:11" Create_time="2021-06-07 21:21:57" Data_free="0" Index_length="0" Max_data_length="0" Data_length="16384" Avg_row_length="1638" Rows="10" Row_format="Dynamic" Version="10" Engine="InnoDB" Name="GRADO"/>
+        </table_structure>
+        <table_data name="GRADO">
+            <row>
+                <field name="GRADO">1</field>
+                <field name="SALARIO_MAS_BAJO">700</field>
+                <field name="SALARIO_MAS_ALTO">1200</field>
+            </row>
+            <row>
+                <field name="GRADO">2</field>
+                <field name="SALARIO_MAS_BAJO">1201</field>
+                <field name="SALARIO_MAS_ALTO">1400</field>
+            </row>
+            <row>
+                <field name="GRADO">3</field>
+                <field name="SALARIO_MAS_BAJO">1401</field>
+                <field name="SALARIO_MAS_ALTO">2000</field>
+            </row>
+            <row>
+                <field name="GRADO">4</field>
+                <field name="SALARIO_MAS_BAJO">2001</field>
+                <field name="SALARIO_MAS_ALTO">3000</field>
+            </row>
+            <row>
+                <field name="GRADO">5</field>
+                <field name="SALARIO_MAS_BAJO">3001</field>
+                <field name="SALARIO_MAS_ALTO">9999</field>
+            </row>
+        </table_data>
+    </database>
+</mysqldump>
